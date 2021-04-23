@@ -50,3 +50,16 @@ const myConst = 0
 
 myVar = 3 // this is allowed
 myConst = 3 // this is NOT allowed
+
+
+// Objects
+// Numbers, boolean and strings are like the atoms that compose our data. 
+// Many types of information require more complex structures, though. 
+// Objects let us group together simple data types into a single structure.
+
+const user = {
+	name: "John", // string property
+	surname: "Rambo", // another string property
+	age: 18, // numeric property
+	isStudent: true, // boolean property
+};
