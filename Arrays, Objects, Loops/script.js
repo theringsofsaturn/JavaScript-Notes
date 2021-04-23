@@ -83,3 +83,17 @@ console.log(user.name); // "Roger"
 delete user.name;
 
 console.log(user.name); // undefined
+
+// Object.assign
+// let obj2 = obj1 is not enough to clone an object, because there will always be an unwanted bind between the two. 
+// A preferrable way to copy all the properties from an object into another one is the following
+
+let obj1 = {
+    name: "John"
+ }
+ 
+ let obj2 = {}
+ 
+ Object.assign(obj2, obj1); // assign obj2 to obj1
+ 
+ console.log(obj2.name); // "John"
