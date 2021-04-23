@@ -38,3 +38,15 @@ const truthyOrFalse = "" ? "truthy" : "falsy";
 
 console.log(2 == '2');
 console.log(2 === '2');
+
+// Let vs const
+
+
+// const stands for constant. While a variable (let) could vary its value as the program flow proceeds, 
+// constants point at the same value for as long as they lives. So it does mean that you can't reassign a value two times when using const!
+
+let myVar = 0
+const myConst = 0
+
+myVar = 3 // this is allowed
+myConst = 3 // this is NOT allowed
