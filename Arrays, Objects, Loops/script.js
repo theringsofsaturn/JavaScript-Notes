@@ -97,3 +97,21 @@ let obj1 = {
  Object.assign(obj2, obj1); // assign obj2 to obj1
  
  console.log(obj2.name); // "John"
+
+//  Arrays
+// ‌JS as many other programming languages provides a way to store sequentially some data. 
+// It is called array and is written as a list of values between square brackets, each one separated by commas
+
+let listOfNumbers = [2, 3, 5, 7, 11]; // array of numbers
+let listOfNames = ["John","Arnold","Chuck"]; // array of strings
+let listOfBools = [true, false, false, false, true]; // array of booleans
+
+// We can access to a specific element of the array by using its index, or position in the list, surrounded again by square brackets 
+
+// N.B. arrays' indexes start from zero!
+
+console.log(listOfNumbers[0]); // 2
+console.log(listOfNumbers[1]); // 3
+console.log(listOfNumbers[4]); // 11
+
+// What happens if you try to log array element with index 5 or above?
