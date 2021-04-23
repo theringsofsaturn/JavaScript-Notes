@@ -63,3 +63,23 @@ const user = {
 	age: 18, // numeric property
 	isStudent: true, // boolean property
 };
+
+// Properties
+// You can access to objects properties in two ways: dot notation and square brackets.
+
+console.log(user.name); // "John"
+console.log(user["name"]); // same result
+
+// In the same way you can change the values of the properties too
+
+user.name = "Roger"; // equivalent to user["name"] = "Roger";
+
+console.log(user.name); // "Roger"
+
+
+// Delete Properties
+// If you need to delete some properties from your objects you can use the reserved keyword delete in front of the object and his property
+
+delete user.name;
+
+console.log(user.name); // undefined
