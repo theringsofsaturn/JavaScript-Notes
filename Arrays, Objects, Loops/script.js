@@ -32,3 +32,9 @@ const truthyOrFalse = "" ? "truthy" : "falsy";
 // undefined
 // NaN
 // Everything else is truthy.
+
+// === and ==
+// Unexpected situations can occur when comparing truthy and falsy values using the ==. It is always better to use in JS the triple equality === (or !== for the inequality), because it is a strict equality check.
+
+console.log(2 == '2');
+console.log(2 === '2');
