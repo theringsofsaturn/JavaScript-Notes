@@ -136,3 +136,49 @@ const users = [
 
 console.log(users[0]); // {name: "John", surname: "Rambo"}
 console.log(users[2].surname); // "Norris"
+
+// Useful arrays methods
+
+// Push and pop are array methods which can be used to add or remove elements to and from the end of an array
+
+// push
+
+const myArray = [1,2,3]
+
+myArray.push(4)
+myArray.push(5)
+
+console.log(myArray) // [1,2,3,4,5]
+
+pop
+console.log(myArray.pop()) // removes the last element
+
+console.log(myArray) // [1,2,3,4]
+
+// We can search for a specific value with indexOf() and lastIndexOf(), they both return the index of the first occurance 
+// if found or -1 if not found. The difference between the two is that lastIndexOf starts from the end of the array, 
+// so if two elements are duplicated it returns just the first occurance
+
+// indexOf
+
+console.log(myArray.indexOf(1)); // 0
+lastIndexOf
+const myArray = [1,2,3,4,5,1,6]
+console.log(myArray.lastIndexOf(1)); // 5
+
+// Slice method can be used to return just a part of an array, you can specify a start index and optionally an end index. 
+// If end index is not specified the array will be sliced till the last element
+
+slice
+const myArray = [1,2,3,4,5]
+
+console.log(myArray.slice(2,4)); // [3,4]
+console.log(myArray.slice(2)); // [3,4,5]
+
+
+
+
+// The concat method can be used to glue arrays together to create a new array
+
+concat
+let list = [1, 2, 3, 4,].concat([5,6,7,8]) // list becomes [1,2,3,4,5,6,7,8] 
