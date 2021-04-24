@@ -233,7 +233,21 @@ for (let i = 0; i < 5; i++) {
 	console.log(i);
 }
 
- // Output:
- // 0
- // 1
- // 2
+// Output:
+// 0
+// 1
+// 2
+
+//  Loops & Arrays
+// A very convenient way to interact with arrays is by looping them over with a for loop
+
+const myArray = [0, 1, 2, 3, 4, 5]
+for (let i = 0; i < myArray.length; i++) {
+	let element = myArray[i];
+	console.log("Hey this is the element --> ", element)
+}
+
+
+// We use the variable i to represent the index of each element of the array. 
+// Therefore starting from index 0 (first element of the array) till index equals to length of the array - 1, 
+// we should be able to perform actions on an array accessing to each element one by one
