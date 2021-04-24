@@ -38,3 +38,19 @@ document.getElementsByTagName('div') // example
 
 
 // It will return an array of elements which have the selected tag (even if just one element is found).
+
+
+// querySelector
+// With this method you can select an element using a CSS selector:
+
+
+
+document.querySelector('putTheCssSelectorHere')
+
+document.querySelector('div .row #myButton') // example
+‌
+
+// It will return at most ONE reference to ONE element in the page.
+
+
+
