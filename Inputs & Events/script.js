@@ -1,8 +1,8 @@
 // Accessing input fields
 
 
-{/* <input> tags are used for user interaction. 
-You can always read/overwrite their content accessing the value property of their JavaScript reference. */}
+// <input> tags are used for user interaction. 
+// You can always read/overwrite their content accessing the value property of their JavaScript reference.
 
 
 
