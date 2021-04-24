@@ -64,7 +64,25 @@ saySomethingElseFunction("Hello!", "Tobia") // prints "Tobia says Hello!"
 
 
 const twoTimesTwo = square(2) // the variable twoTimesTwo will hold the result coming from square function calculated with parameter 2
-const hundredTimesHundred = square(100) // the variable twoTimesTwo will hold the result coming from square function calculated with parameter 100
+const hundredTimesHundred = square(100) // the variable hundredTimesHundred will hold the result coming from square function calculated with parameter 100
 
 console.log(twoTimesTwo) // prints 4
 console.log(hundredTimesHundred) // prints 10000
+
+
+// Arrow functions
+// There's another way for declaring functions which looks different than before. 
+// For now we can use it as a replacement for what we saw earlier but with a shorter syntax. 
+// In the future we'll learn about some differences between classical syntax and the so called arrow syntax, 
+// we are going to use the latter everytime this would be possible
+
+
+const square = x => {
+    return x*x;
+} // this is exactly equivalent as the square function with the classical syntax
+// If you have just one line of code in the curly braces you can even be shorter than that by omitting return statement
+
+
+
+const square = x => x * x;
+// The usage of the arrow functions is exactly the same as 'normal' ones
