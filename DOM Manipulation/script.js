@@ -73,8 +73,6 @@ document.querySelectorAll('div .row') // example
 // The most popular are:
 
 
-
-
 // element.innerText
 // This property holds the text value contained in the element.
 
