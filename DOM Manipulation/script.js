@@ -6,7 +6,6 @@
 // If the element has a unique id property, you can select it with:
 
 
-
 document.getElementById('putTheIdHere')
 
 document.getElementById('myButton') // example
