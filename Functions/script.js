@@ -17,8 +17,6 @@ const sayHelloFunction = function() {
 };
 
 
-
-
 // A function can have one parameter
 
 const saySomethingFunction = function(something) {
@@ -46,3 +44,27 @@ const sayHelloFunction = function() {
 const square = function(x) {
     return x * x;
 };
+
+
+// Usage of functions
+// Let's see how the pre declared functions can now be invoked
+
+
+
+sayHelloFunction() // prints "Hello!"
+
+saySomethingFunction("Hello Strivers") // prints what you pass in between the parenthesis --> "Hello Strivers"
+
+saySomethingElseFunction("Hello!", "Tobia") // prints "Tobia says Hello!"
+
+
+
+// If a function returns a value you can even store it in a variable
+
+
+
+const twoTimesTwo = square(2) // the variable twoTimesTwo will hold the result coming from square function calculated with parameter 2
+const hundredTimesHundred = square(100) // the variable twoTimesTwo will hold the result coming from square function calculated with parameter 100
+
+console.log(twoTimesTwo) // prints 4
+console.log(hundredTimesHundred) // prints 10000
