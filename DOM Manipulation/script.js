@@ -66,5 +66,27 @@ document.querySelectorAll('div .row') // example
 // It will return an array of elements matching your CSS selector (even if just one element is found).
 
 
+// Popular element properties
+
+// Once you select an element from the page, you can manipulate it changing its properties.
+
+// The most popular are:
+
+
+
+
+// element.innerText
+// This property holds the text value contained in the element.
+
+
+
+let myParagraph = document.getElementById('firstParagraph')
+
+console.log(myParagraph.innerText) // WILL OUTPUT THE CURRENT TEXT IN THE ELEMENT
+myParagraph.innerText = 'I got changed' // ASSIGN IT TO CHANGE ITS VALUE
+
+// The value can be read accessing the property, or can be overwritten assigning it to another string.
+
+
 
 
