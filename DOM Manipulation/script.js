@@ -25,3 +25,16 @@ document.getElementsByClassName('row') // example‌
 
 
 // It will return an array of elements which have the selected class (even if just one element is found).
+
+
+// getElementsByTagName
+// With this method you can select all the elements with a specific tag (i.e. h1, div, p etc.):
+
+
+
+document.getElementsByTagName('putTheTagHere')
+
+document.getElementsByTagName('div') // example
+
+
+// It will return an array of elements which have the selected tag (even if just one element is found).
