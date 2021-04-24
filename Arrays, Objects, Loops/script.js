@@ -182,3 +182,25 @@ console.log(myArray.slice(2)); // [3,4,5]
 
 concat
 let list = [1, 2, 3, 4,].concat([5,6,7,8]) // list becomes [1,2,3,4,5,6,7,8] 
+
+// Loops
+// Loops allow developers to shorten what could be hundreds of lines of code to just a few 
+// by repeating same or similar lines of code over multiple iterations
+
+// While Loop
+
+// Looping control flow allows us to go back to some point in the program where we were before and repeat it with our current program state. 
+// If we combine this with a variable that counts, we can do something like
+
+
+
+let number = 0;
+while (number <= 10) {
+    console.log(number);
+    number = number + 1;
+}
+
+
+// A statement starting with the while keyword followed by parenthesis containing an expression is a loop. 
+// The loop keeps entering that statement as long as the expression produces a value that gives true
+
