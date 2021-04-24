@@ -101,6 +101,21 @@ myParagraph.innerHTML = '<span>I got changed</span>' // ASSIGN IT TO CHANGE ITS 
 // The HTML content inside the selected element can be read accessing the property, or can be overwritten assigning it to another string.
 
 
+// element.classList
+// This property holds all the CSS classes assigned to the element.
+
+
+
+let myHeading = document.getElementsByTagName('h1')[0]
+
+myHeading.classList.add("new-class") // adds a class of "new-class" to the heading
+
+
+// You can also use the property className for directly access or set the classes in a string form.
+
+
+
+
 
 
 
