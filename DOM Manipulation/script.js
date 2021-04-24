@@ -114,6 +114,20 @@ myHeading.classList.add("new-class") // adds a class of "new-class" to the headi
 // You can also use the property className for directly access or set the classes in a string form.
 
 
+// element.style
+// This property holds all the CSS properties of the element.
+
+
+
+let myHeading = document.getElementsByTagName('h1')[0]
+
+myHeading.style.color = 'red' // CHANGES THE H1 TEXT COLOR
+
+
+// Every CSS property of the element can be accessed with its name written in camelCase (ex.: backgroundColor, fontSize, width). 
+// You can read its value or overwrite it.
+
+
 
 
 
