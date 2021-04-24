@@ -224,3 +224,16 @@ for (let i = 0; i < 5; i++) {
 // the second one is the condition thta checks whether the loop must continue or not. -->> i < 5;
 // Finally the third one is used to update the variable on each iteration of the loop. -->>  i++
 
+// Breaking out of a loop
+// A for loop finishes usually when the condition in the round parenthesis becomes false. 
+// There is also a reserved keyword used to force exit from a loop even though the condition is still false, this keyword is break
+
+for (let i = 0; i < 5; i++) {
+	if (i === 3) break;
+	console.log(i);
+}
+
+ // Output:
+ // 0
+ // 1
+ // 2
