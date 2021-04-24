@@ -4,24 +4,24 @@
 const age = 19;
 
 // if age is greater than 18 price will hold "20$" as a value, otherwise it will hold "15$"	
-const price = age > 18 ? "20$" : "15$"; 
+const price = age > 18 ? "20$" : "15$";
 
 // simple example
 x = 10
 let ternaryOperator = x > 10 ? true : false;
 
 // the same as with if statemen example
-if (x > 10){
-    ternaryOperator = true
-}else{
-    ternaryOperator = false
+if (x > 10) {
+	ternaryOperator = true
+} else {
+	ternaryOperator = false
 }
 
 // Truthy and Falsy
 // In JS some values are evaluated as true or false even though they aren't booleans. Here is just one example:
 
 // empty string is evaluated as a false value
-const truthyOrFalse = "" ? "truthy" : "falsy"; 
+const truthyOrFalse = "" ? "truthy" : "falsy";
 
 // The following values are always falsy:
 
@@ -89,21 +89,21 @@ console.log(user.name); // undefined
 // A preferrable way to copy all the properties from an object into another one is the following
 
 let obj1 = {
-    name: "John"
- }
- 
- let obj2 = {}
- 
- Object.assign(obj2, obj1); // assign obj2 to obj1
- 
- console.log(obj2.name); // "John"
+	name: "John"
+}
+
+let obj2 = {}
+
+Object.assign(obj2, obj1); // assign obj2 to obj1
+
+console.log(obj2.name); // "John"
 
 //  Arrays
 // ‌JS as many other programming languages provides a way to store sequentially some data. 
 // It is called array and is written as a list of values between square brackets, each one separated by commas
 
 let listOfNumbers = [2, 3, 5, 7, 11]; // array of numbers
-let listOfNames = ["John","Arnold","Chuck"]; // array of strings
+let listOfNames = ["John", "Arnold", "Chuck"]; // array of strings
 let listOfBools = [true, false, false, false, true]; // array of booleans
 
 // We can access to a specific element of the array by using its index, or position in the list, surrounded again by square brackets 
@@ -120,18 +120,18 @@ console.log(listOfNumbers[4]); // 11
 // We can have arrays of any type, even containing advanced types like objects
 
 const users = [
-       {
-  	     name: "John",
-  	     surname: "Rambo",
-  	   },
-  	   {
-  	     name: "Arnold",
-  	     surname: "Schwarzenegger",
-  	   },
-  	   {
-  	     name: "Chuck",
-  	     surname: "Norris",
-  	   },
+	{
+		name: "John",
+		surname: "Rambo",
+	},
+	{
+		name: "Arnold",
+		surname: "Schwarzenegger",
+	},
+	{
+		name: "Chuck",
+		surname: "Norris",
+	},
 ]; // an array of three elements, each one of them is an object with two properties
 
 console.log(users[0]); // {name: "John", surname: "Rambo"}
@@ -143,7 +143,7 @@ console.log(users[2].surname); // "Norris"
 
 // push
 
-const myArray = [1,2,3]
+const myArray = [1, 2, 3]
 
 myArray.push(4)
 myArray.push(5)
@@ -163,16 +163,16 @@ console.log(myArray) // [1,2,3,4]
 
 console.log(myArray.indexOf(1)); // 0
 lastIndexOf
-const myArray = [1,2,3,4,5,1,6]
+const myArray = [1, 2, 3, 4, 5, 1, 6]
 console.log(myArray.lastIndexOf(1)); // 5
 
 // Slice method can be used to return just a part of an array, you can specify a start index and optionally an end index. 
 // If end index is not specified the array will be sliced till the last element
 
 slice
-const myArray = [1,2,3,4,5]
+const myArray = [1, 2, 3, 4, 5]
 
-console.log(myArray.slice(2,4)); // [3,4]
+console.log(myArray.slice(2, 4)); // [3,4]
 console.log(myArray.slice(2)); // [3,4,5]
 
 
@@ -181,7 +181,7 @@ console.log(myArray.slice(2)); // [3,4,5]
 // The concat method can be used to glue arrays together to create a new array
 
 concat
-let list = [1, 2, 3, 4,].concat([5,6,7,8]) // list becomes [1,2,3,4,5,6,7,8] 
+let list = [1, 2, 3, 4,].concat([5, 6, 7, 8]) // list becomes [1,2,3,4,5,6,7,8] 
 
 // Loops
 // Loops allow developers to shorten what could be hundreds of lines of code to just a few 
@@ -196,11 +196,31 @@ let list = [1, 2, 3, 4,].concat([5,6,7,8]) // list becomes [1,2,3,4,5,6,7,8]
 
 let number = 0;
 while (number <= 10) {
-    console.log(number);
-    number = number + 1;
+	console.log(number);
+	number = number + 1;
 }
 
 
 // A statement starting with the while keyword followed by parenthesis containing an expression is a loop. 
 // The loop keeps entering that statement as long as the expression produces a value that gives true
+
+// For Loop
+
+// For loop in JS:
+
+for (let i = 0; i < 5; i++) {
+	console.log(i);
+}
+
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 4
+
+// The round parenthesis of a for loop contain three main parts. 
+// The first one is the initialization of the variable from which the loop will start "counting", -->> let i = 0
+// the second one is the condition thta checks whether the loop must continue or not. -->> i < 5;
+// Finally the third one is used to update the variable on each iteration of the loop. -->>  i++
 
