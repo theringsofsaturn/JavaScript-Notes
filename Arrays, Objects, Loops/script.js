@@ -115,3 +115,24 @@ console.log(listOfNumbers[1]); // 3
 console.log(listOfNumbers[4]); // 11
 
 // What happens if you try to log array element with index 5 or above?
+
+// Arrays of objects
+// We can have arrays of any type, even containing advanced types like objects
+
+const users = [
+       {
+  	     name: "John",
+  	     surname: "Rambo",
+  	   },
+  	   {
+  	     name: "Arnold",
+  	     surname: "Schwarzenegger",
+  	   },
+  	   {
+  	     name: "Chuck",
+  	     surname: "Norris",
+  	   },
+]; // an array of three elements, each one of them is an object with two properties
+
+console.log(users[0]); // {name: "John", surname: "Rambo"}
+console.log(users[2].surname); // "Norris"
