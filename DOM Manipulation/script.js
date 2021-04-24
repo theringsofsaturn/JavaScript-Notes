@@ -87,4 +87,20 @@ myParagraph.innerText = 'I got changed' // ASSIGN IT TO CHANGE ITS VALUE
 
 
 
+// element.innerHTML
+// This property holds the HTML content of the element.
+
+
+
+let myDiv = document.getElementById('firstDiv')
+
+console.log(myParagraph.innerHTML) // WILL OUTPUT THE CURRENT HTML IN THE ELEMENT
+myParagraph.innerHTML = '<span>I got changed</span>' // ASSIGN IT TO CHANGE ITS VALUE
+
+
+// The HTML content inside the selected element can be read accessing the property, or can be overwritten assigning it to another string.
+
+
+
+
 
