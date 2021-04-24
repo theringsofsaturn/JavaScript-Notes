@@ -128,6 +128,37 @@ myHeading.style.color = 'red' // CHANGES THE H1 TEXT COLOR
 // You can read its value or overwrite it.
 
 
+// How to create new HTML elements with JS
+// ‌
+
+// For creating new elements in the DOM, use the createElement method in the document object.
+
+
+
+let myNewParagraph = document.createElement('p')
+
+
+// You just created a new paragraph from scratch! But right now it doesn't have any content and it's not appended anywhere in the page 
+// (so it's not visible in the browser).
+
+
+
+// using the innerText property I can add some content to my empty paragraph
+myNewParagraph.innerText = "Let's add some text to this new paragraph"
+
+// using the style property I can change the font weight
+myNewParagraph.style.fontWeight = 600
+
+// finally let's append this paragraph at the end of our page
+document.querySelector('body').appendChild(myNewParagraph)
+
+
+// With appendChild(element) you can insert an element as the last child of another element (the parent).
+
+
+
+// With removeChild(element) you can delete an element from the DOM. Must be invoked from the parent element, 
+// with a reference to the element to remove as the parameter.
 
 
 
