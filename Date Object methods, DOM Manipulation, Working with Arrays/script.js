@@ -74,3 +74,24 @@ for (let i = 0; i < numberOfDays; i++) {
     calendar.appendChild(cell);
 }
 
+
+// Add class to show border on the selected day
+
+
+
+// inside the previous for loop we write:
+
+child.onclick = function (event) {
+
+    let selected = document.querySelector(".selected");
+
+    if (selected) {
+        selected.classList.remove("selected");
+    }
+
+    event.currentTarget.classList.add("selected");
+}
+// an onclick event that for every day pressed will check if there's another day .selected, if there is we remove the class from there, and add it to the day that we've actually pressed.
+
+// "selected" class needs some CSS styling to be seen, of course.
+
