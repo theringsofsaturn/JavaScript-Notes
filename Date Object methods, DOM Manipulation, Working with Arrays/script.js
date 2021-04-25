@@ -153,3 +153,35 @@ const saveMeeting = function () {
 // You can see sometimes -1 used to go back to the 0 based notation (1 --> 0), in order to select correctly the array's element starting from 0, because the day value is using a 1 based notation and starts from 1 while arrays starts from 0 and we want to sync the two elements order.
 
 
+
+// Show Appointments
+// we need to create a function showAppointments that is going to be triggered when a day is clicked and received the day number as an arguement.
+
+const showAppointments = function (day) {
+
+    let todaysAppointments = appointments[day - 1];
+
+    document.querySelector("#appointments").style.display = "block";
+    let appointmentList = document.querySelector("#appointmentList");
+
+    appointmentList.innerHTML = "";
+
+    for (let i = 0; i < todaysAppointments.length; i++) {
+        let li = document.createElement("li");
+        li.innerHTML = todaysAppointments[i];
+        appointmentList.appendChild(li);
+    }
+};
+
+
+// We receive the day from where the function will be called. todaysAppointments will store the content of the sub-array of the corresponding array for that day in the appointments array: appointments[day - 1]
+
+
+
+// we then:
+
+// make the #appointments div visible with a display: block;
+// grab the <ul id="appointment-list"> to use later to append multiple <li>
+// make sure that the list starts empty before adding list items
+// create a for loop to draw in the page as many <li> as there are appointments in the day's array: todaysAppointments[i]
+
