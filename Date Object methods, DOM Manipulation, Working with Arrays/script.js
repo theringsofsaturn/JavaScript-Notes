@@ -95,3 +95,61 @@ child.onclick = function (event) {
 
 // "selected" class needs some CSS styling to be seen, of course.
 
+
+// Adding Appointments
+// For instance we need a top level variable to store the main Array for the appointments:
+
+let appointments = [];
+// this is going to be the "memory" of our appointments, untill we refresh the page.
+
+
+
+// inside the previous for loop we are going to create as many sub arrays as we have days in the month:
+
+appointments[i] = [];
+
+
+// by using the index of the for loop we are basically creating one new empty array for each day inside of the first "appointments" array.
+
+// Something like this:
+
+[
+    [], [], [], [], [], [], [],
+    [], [], [], [], [], [], [],
+    [], [], [], [], [], [], [],
+    ...
+]
+// with each day having its own empty array ready to be filled with appointments.*
+
+
+
+// We now need to update #newMeetingDay element with the day number, so that we can retrieve it inside of the next saveMeeting function. 
+
+// In the previous child.onclick function add:
+
+// document.querySelector("#meeting-day").innerText = i + 1;
+// this will add the index value of the for loop we are in as innerText, + 1 to have a 1 based notation number (we want to avoid having a 0 for the first day).
+
+
+
+// we then create the saveMeeting function to compose our meeting string by using values from the appoinment's section inputs and push them in the correct sub-array of the appointments array (*one of the aformentioned):
+
+const saveMeeting = function () {
+    const meetingDay = document.querySelector("#meeting-day").innerText;
+    let meetingTime = document.querySelector("#meeting-time");
+    let meetingName = document.querySelector("#meeting-name");
+    // input values get stored
+
+    let calendar = document.querySelector("#calendar");
+
+    let dayCell = calendar.children[parseInt(meetingDay) - 1];
+
+    appointments[parseInt(meetingDay) - 1].push(meetingTime.value + " - " + meetingName.value);
+
+    meetingTime.value = "";
+    meetingName.value = "";
+    //resets the inputs
+};
+// You can see sometimes -1 used to go back to the 0 based notation (1 --> 0), in order to select correctly the array's element starting from 0, because the day value is using a 1 based notation and starts from 1 while arrays starts from 0 and we want to sync the two elements order.
+
+
