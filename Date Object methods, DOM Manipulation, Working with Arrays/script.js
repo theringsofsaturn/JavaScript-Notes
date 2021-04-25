@@ -57,3 +57,20 @@ new Date(2021, 11, 25)
 
 // Sat Dec 25 2021 00:00:00 GMT+0100
 
+
+// Create as many cells as there are days in the month
+// we save the numberOfDays in a variable, grab the reference of the calendar div,
+
+// then use a for loop that will stop when i < numberOfDays, creating as many day cells as the numberOfDays.
+
+const now = new Date();
+
+const numberOfDays = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+
+let calendar = document.querySelector("#calendar");
+
+for (let i = 0; i < numberOfDays; i++) {
+    const cell = document.createElement("div");
+    calendar.appendChild(cell);
+}
+
